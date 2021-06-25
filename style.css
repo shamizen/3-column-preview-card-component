@@ -6,6 +6,7 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-gray: hsl(0, 0%, 95%);
+  --bg-gray: hsla(0, 3%, 81%, 0.116);
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-  background-color: white;
+  background-color: var(--bg-gray);
   min-width: 375px;
   height: 100vh;
   display: flex;
@@ -86,34 +87,34 @@ a {
 .item.sedans a {
   color: var(--bright-orange);
   background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
 }
 
 .item.suvs a {
   color: var(--dark-cyan);
   background-color: var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
 }
 
 .item.luxury a {
   color: var(--very-dark-cyan);
+  border: 2px solid var(--very-light-gray);
   background-color: var(--very-light-gray);
 }
 
 .item.sedans a:hover {
   color: var(--very-light-gray);
   background-color: var(--bright-orange);
-  border: 2px solid var(--very-light-gray);
 }
 
 .item.suvs a:hover {
   color: var(--very-light-gray);
   background-color: var(--dark-cyan);
-  border: 2px solid var(--very-light-gray);
 }
 
 .item.luxury a:hover {
   color: var(--very-light-gray);
   background-color: var(--very-dark-cyan);
-  border: 2px solid var(--very-light-gray);
 }
 
 @media only screen and (max-width: 1024px) {
